@@ -4,7 +4,8 @@
 @{
     # For latest supported version, go to 'https://www.powershellgallery.com/packages/Az'. 
     # To use the Az module in your function app, please uncomment the line below.
-    'Az.accounts'   = '2.*'
-    'Az.Keyvault'   = '3.*'
-    'AzBobbyTables' = '2.*'
+    'Az.accounts'   = '5.*'
+    'Az.Keyvault'   = '6.*'
+    'AzBobbyTables' = '3.*'
+    'Az.Storage' = '9.*'
 }
