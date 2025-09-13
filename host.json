@@ -1,13 +1,28 @@
 {
   "version": "2.0",
+  "concurrency": { 
+    "dynamicConcurrencyEnabled": true, 
+    "snapshotPersistenceEnabled": true 
+  },
   "managedDependency": {
     "enabled": false
+  },
+  "logging": {
+    "fileLoggingMode": "debugOnly",
+    "logLevel": {
+      "Function.MyFunction": "Information",
+      "default": "None"
+    },
+    "console": {
+      "isEnabled": true,
+      "DisableColors": false
+    }
   },
   "extensionBundle": {
     "id": "Microsoft.Azure.Functions.ExtensionBundle",
     "version": "[4.*, 5.0.0)"
   },
-  "functionTimeout": "00:10:00",
+  "functionTimeout": "00:01:00",
   "extensions": {
     "durableTask": {
       "maxConcurrentActivityFunctions": 5,
