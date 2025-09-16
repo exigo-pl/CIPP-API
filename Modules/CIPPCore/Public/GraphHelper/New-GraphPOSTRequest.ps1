@@ -28,7 +28,8 @@ function New-GraphPOSTRequest ($uri, $tenantid, $body, $type, $scope, $AsApp, $N
             } else {
                 $_.Exception.message
             }
-            throw $Message
+            #throw $Message
+            throw $_.Exception.Response
         }
         if ($returnHeaders) {
             return $responseHeaders
