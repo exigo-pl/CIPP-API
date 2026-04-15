@@ -27,4 +27,4 @@ jobs:
           app-name: 'cippaabcu-proc'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0F85C02730FD4AAEB497FC192FA0F99A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C4323F51302C477EB6A12758F916DC55 }}
